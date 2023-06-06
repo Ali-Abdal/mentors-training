@@ -1,1 +1,5 @@
+used a better version of tkinter called customtkinter
 pip install customtkinter
+
+customtkinter docs: https://customtkinter.tomschimansky.com/documentation/
+customtkinter github page: https://github.com/TomSchimansky/CustomTkinter
