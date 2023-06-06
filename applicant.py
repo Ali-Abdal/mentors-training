@@ -1,4 +1,4 @@
-
+# class used to store applicant data
 class Applicant:
 
     def __init__(self,name,email,civilId,gender):

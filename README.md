@@ -1,5 +1,5 @@
-# Name: Ali Abdal
-# Track: Python
+# Name:
+# Track:
 # Description:
 
 

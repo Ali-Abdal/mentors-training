@@ -6,7 +6,8 @@ class Data:
         self.file_path = file_path
         self.applicants_data = None
 
-    # loads the data from the csv file and stores it in a list of Applicant objects
+    # loads the data from the csv file and stores it in a list of Applicant objects 
+    # if file is empty it returns Programme running for the first time!
     def load_data(self):
         try:
             with open(self.file_path,'r') as fh:
@@ -31,6 +32,7 @@ class Data:
         except FileNotFoundError:
             print('Error check the file path !!!')
 
+    # rewrite the file if there is a new applicant adding new applicant data
     def update_file_data(self):
         with open(self.file_path,'w') as fh:
             writer = csv.writer(fh)
@@ -39,6 +41,7 @@ class Data:
                 writer.writerow([applicant.name,applicant.email,applicant.civilId,applicant.gender])
         print('File data has been updated!')
 
+#   used when file is empty (Programme running for the first time!)
     def create_data(self,applicant_data):
         self.applicants_data = []
         name = applicant_data[0]
