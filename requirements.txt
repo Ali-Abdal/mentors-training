@@ -1,5 +1,7 @@
 used a better version of tkinter called customtkinter
 pip install customtkinter
 
+also you might need to update image path and theme path in main.py if you are using windows
+
 customtkinter docs: https://customtkinter.tomschimansky.com/documentation/
 customtkinter github page: https://github.com/TomSchimansky/CustomTkinter
